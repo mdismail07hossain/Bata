@@ -1,0 +1,584 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main_head-content {
+  padding: 26px 0 24px;
+}
+.content_s span {
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+.img_container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.img1,
+.img2 {
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.img_container:hover .img1 {
+  opacity: 0;
+}
+.img_container:hover .img2 {
+  opacity: 1;
+}
+li {
+  list-style: none;
+  padding-right: 25px;
+}
+.pop_father {
+  position: relative;
+}
+.pop_father:hover .img_pop {
+  opacity: 1;
+  top: 35px;
+  left: -110px;
+  transition: all linear 0.5s;
+}
+.img_pop {
+  background-color: white;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 4;
+  opacity: 0;
+}
+.my_item {
+  font-size: 14px !important;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: capitalize !important;
+}
+.dropdown-item button {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.dropdown-toggle {
+  border: none !important;
+}
+.dpdw {
+  margin-right: 20px;
+}
+.dpdw:hover .drpdwn {
+  display: block;
+}
+.drpdwn {
+  transition: all linear 0.5s;
+  margin-left: -100px !important;
+  margin-top: 10px !important;
+}
+.search {
+  position: relative;
+}
+.search_box {
+  position: relative;
+  outline: none;
+}
+.search_box input {
+  background-color: rgb(247, 245, 245);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  outline: none;
+  border: none;
+  padding: 6px 9px;
+}
+
+.search_icon {
+  position: absolute;
+  right: 11px;
+  top: 8px;
+}
+.search_box input::placeholder {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14;
+  font-weight: 500;
+}
+/* ------------------------naber css part start ----------------------------*/
+
+/* ------------------------naber css part end ----------------------------*/
+/*--------------------------- banner Part css start--------------------- */
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #810b09;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+/*--------------------------- banner Part css end--------------------- */
+/*----------------------------------Catagory part css start ---------------------------*/
+
+.catagoru_content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.catagoru_content:hover {
+  transform: scale(1); /* Scales the card up by 5% */
+}
+.catagoru_content img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.catagoru_content:hover img {
+  transform: scale(1.1); /* Scales the image within the card on hover */
+}
+.over_lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+.catagoru_content img {
+  z-index: 0;
+}
+.catagoru_content:hover .over_lay {
+  opacity: 1;
+}
+/*----------------------------------Catagory part css end ---------------------------*/
+/* ---------------------catagory list css start---------------------------- */
+.nav .nav-item .nav-link {
+  color: #2d2d2d;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+/* Apply styles to the active navigation item */
+
+/* Apply styles when hovering over navigation items */
+.nav-box li .act {
+  padding: 5px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.nav-box li a:focus {
+  padding: 5px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* ---------------------catagory list css End---------------------------- */
+
+/*---------------------------- product card part css start -------------------*/
+.product_img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.img1,
+.img2 {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 50px;
+  transition: opacity 0.5s ease;
+}
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  opacity: 0;
+}
+.product_img:hover .img1 {
+  opacity: 0;
+}
+.product_img:hover .img2 {
+  opacity: 1;
+}
+
+.img1 {
+  height: 100%;
+  width: 80%;
+}
+.img2 {
+  height: 100%;
+  width: 80%;
+}
+
+.size {
+  opacity: 0;
+}
+.size:hover {
+  text-decoration: underline 1px rgb(47, 45, 45);
+}
+.main_product {
+  height: 450px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  transition: all linear 0.3s;
+}
+.main_product:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all linear 0.3s;
+}
+
+.cyical {
+  /* position: absolute;
+  bottom: -85px;
+  left: 140px; */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0;
+}
+
+.main_product {
+  position: relative;
+  /* height: 100%; */
+}
+.like {
+  /* position: absolute;
+  top: -199px;
+  right: 13px; */
+  opacity: 0;
+}
+
+.btn_container {
+  /* width: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.product_button {
+  text-transform: uppercase;
+  padding: 5px 30px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  display: block;
+  /* position: absolute;
+  bottom: -51px;
+  /* left: 82px;* */
+  opacity: 0;
+}
+.product_button:hover {
+  background-color: orangered;
+  transition: 0.5s all linear;
+  border: 1px solid orangered;
+}
+
+/* .main_product:hover .like {
+  opacity: 1;
+  transition: 0.5s all linear;
+} */
+.main_product:hover .size {
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.main_product:hover .product_button {
+  opacity: 1;
+  transition: 0.5s all linear;
+}
+.main_product:hover .cyical {
+  opacity: 1;
+  background-color: aqua;
+  transition: 0.5s all linear;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  max-height: 100%;
+  padding: 30px 0;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: gray;
+  top: 34% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px; /* Change this value to increase/decrease icon size */
+}
+
+/*---------------------------- product card part css end -------------------*/
+
+/*---------------------------- catagory card part css start -------------------*/
+.card {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1); /* Scales the card up by 5% */
+}
+
+.card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Scales the image within the card on hover */
+  /* transition: opacity 0.3s ease; */
+}
+
+.shop_now {
+  text-decoration: none;
+  color: #000; /* Set the link color */
+  font-weight: bold;
+}
+
+.shop_now:hover {
+  color: #ff0000; /* Change color on hover (optional) */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1; /* Make the overlay visible on hover */
+  /* transition: opacity 0.3s ease; */
+}
+.card-body {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  height: auto;
+  /* border: none; */
+}
+.collectino_titel {
+  width: 80%;
+  position: absolute;
+  overflow: hidden !important;
+  top: -25px;
+  left: 58px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #494949;
+  text-align: center;
+  background-color: white;
+  margin: auto 0;
+}
+.collection_head {
+  font-size: 20px;
+  padding: 15px 0;
+}
+.collectino_content {
+  margin-top: 30px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  /* overflow: hidden;
+  background-color: transparent; */
+}
+.shopNow {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.product_title h6 span {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 26px;
+
+  /* letter-spacing: 2px; */
+}
+.product_title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: -10px;
+}
+/*---------------------------- catagory card part css end -------------------*/
+/*-------------------------------------- Down Banner css part start ------------------*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 63%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  color: gray;
+  top: 60% !important;
+  right: 0% !important;
+  z-index: 10;
+}
+.swiper-button-prev {
+  color: gray;
+  top: 60% !important;
+  left: -58 !important;
+  z-index: 10;
+}
+/* .swiper-button-next {
+  position: absolute; /* or fixed depending on your layout */
+/* color: gray; */
+/* right: 10px; adjust this value as needed */
+/* top: 50%; center vertically */
+/* transform: translateY(-50%); center adjustment */
+/* } */
+
+/* .swiper-button-prev {
+  position: absolute; /* or fixed */
+/* color: gray; */
+/* left: 10px; adjust this value as needed */
+/* top: 50%; center vertically */
+/* transform: translateY(-50%); center adjustment */
+/* }*/
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px; /* Change this value to increase/decrease icon size */
+}
+/*-------------------------------------- Down Banner css part end ------------------*/
+
+/*----------------------- footer Part css start --------------------------*/
+/* .footer_top_content li a:hover{
+  te
+} */
+/* Animation css  */
+.animation {
+  position: relative;
+  /* color: #8426d1; */
+  cursor: pointer;
+}
+.animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  /* Underline color */
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+  transform-origin: bottom right;
+}
+
+.animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.animation:hover::after {
+  animation: underline 0.5s forwards;
+}
+/*--------------------------------------------- menu Animation----------------------------------*/
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  /* Height of the underline */
+  background-color: #272727;
+  /* Underline color */
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: bottom left;
+}
+/*----------------------- Footer Icon css start ----------------------*/
+.footer_icons {
+  text-align: right;
+  letter-spacing: 10px;
+  font-size: 16px;
+}
+
+.custom-hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Set the height of the line */
+  background-color: #494949; /* Change this to your desired color */
+  margin: 20px 0; /* Add some vertical space */
+}
+.text-center img {
+  margin-left: 10px;
+}
