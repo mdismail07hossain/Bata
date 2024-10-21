@@ -84,6 +84,7 @@ li {
 }
 .dpdw:hover .drpdwn {
   display: block;
+  z-index: 3333;
 }
 .drpdwn {
   transition: all linear 0.5s;
@@ -581,6 +582,13 @@ li {
 }
 .text-center img {
   margin-left: 10px;
+}
+
+.naber_main {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2222;
 }
 /*----------------------------- Responsive part start  ---------------------*/
 
